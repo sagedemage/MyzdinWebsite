@@ -13,8 +13,8 @@ html {
 }
 
 .content {
-	margin-right: 6em;
-	margin-left: 6em;
+	margin-right: 4em;
+	margin-left: 4em;
 	margin-top: 1em;
 	background-color: white;
 	padding-top: 1em;
@@ -115,7 +115,7 @@ h2, .header_line {
 	clear: left;
 }
 #links {
-	margin-left: 6em;
+	margin-left: 4em;
 }
 
 .scale_image {
