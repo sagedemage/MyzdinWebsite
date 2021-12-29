@@ -13,8 +13,8 @@ html {
 }
 
 .content {
-	margin-right: 2em;
-	margin-left: 2em;
+	margin-right: 6em;
+	margin-left: 6em;
 	margin-top: 1em;
 	background-color: white;
 	padding-top: 1em;
@@ -48,7 +48,7 @@ footer {
 
 h1 {
 	/* My website title indent */
-	padding-left: 1em;
+	padding-left: 2em;
 }
 
 h2, .header_line {
@@ -115,7 +115,7 @@ h2, .header_line {
 	clear: left;
 }
 #links {
-	margin-left: 2em;
+	margin-left: 6em;
 }
 
 .scale_image {
@@ -154,15 +154,24 @@ h2, .header_line {
 
 }
 
-/* mobile landscape layout (480px to 767px) */
-/*@media only screen and (max-width: 767px) {
-
-}*/
-
 /* mobile portrait layout (479px or less) */
 @media only screen and (max-width: 479px) {
 	body {
 		font-size: 90%;
+	}
+
+	h1 {
+		/* My website title indent */
+		padding-left: 1em;
+	}
+
+	.content {
+		margin-right: 2em;
+		margin-left: 2em;
+	}
+
+	#links {
+		margin-left: 2em;
 	}
 }
 
