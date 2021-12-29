@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Define character encoding to be UTF-8 -->
+		<meta charset="UTF-8">
+		<!-- Browser tab's title -->
+		<title>Salmaan's website</title>
+		<!-- Browser tab icon -->
+		<link rel="shortcut icon" href="../icons/tech_electronics_icon.ico">
+		<!-- Define a description of the web page -->
+		<meta name="description" content="Salmaan's website">
+		<!-- Define keywords for search engines -->
+		<meta name="keywords" content="technology, hardware, software, hobbies, interests">
+		<!-- Make the web page responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Linking my stylesheet file to this html page -->
+		<link rel="stylesheet" href="../css/styles.css">
+		<!-- Bootstrap 4 -->
+		<!-- This is the compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Hosted jQuery library from Google -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- Slicknav javascript file -->
+		<script src="../js/jquery.slicknav.min.js"></script>
+		<!-- Slicknav css file -->
+		<link rel="stylesheet" href="../css/slicknav.css">
+	</head>
+	<body>
+		<!-- Slicknav Script -->
+		<script>
+		$(function(){
+			$('#nav_menu').slicknav({
+				prependTo: '#mobile_menu'
+			});
+		});
+		</script>
+		<!-- The Website Title -->
+		<header>
+			<h1> Ghost Game </h1>
+		</header>
+		<!-- Slicknav spawns here -->
+		<nav id ="mobile_menu"></nav>
+		<!-- Navigation Bar -->
+		<ul id="nav_menu">
+			<li><a href="../index.html"> Home </a></li>
+			<li><a href="linux_build.html"> Building in Linux </a></li>
+			<li><a class="active" href="windows_build.html"> Building in Windows </a></li>
+		</ul>
+		<main>
+			<!-- Article Content -->
+			<div class="content">
+				<h2> Build the game yourself (Windows) </h2>
+				
+				<h3> Software Requirements </h3>
+				<ul>
+					<li> Visual Studio </li>
+					<li> SDL2 Runtime Binaries (64-bit Windows) </li>
+					<li> SDL2 Development Libraries (Visual C++ version) </li>
+					<li> SDL2_mixer Runtime Binaries (64 bit Windows) </li>
+					<li> SDL2_mixer Development Libraries (Visual C++ 64/32 bit) </li>
+				</ul>
+				
+				<h3> Websites of the software </h3>
+				<ul>
+					<li> <a href="https://www.libsdl.org/download-2.0.php"> SDL2 </a> </li>
+					<li> <a href="https://www.libsdl.org/projects/SDL_mixer/"> SDL2_mixer 2.0 </a> </li>
+					<li> <a href="https://visualstudio.microsoft.com/"> Visual Studio </a> </li>
+				</ul>
+				
+				<h3> Location of the Runtime Binaries </h3>
+				<ul>
+					<li> C:\Windows\SDL2.dll </li>
+					<li> C:\Windows\SDL2_mixer.dll </li>
+					<li> C:\Windows\libogg-0.dll </li>
+					<li> C:\Windows\libvorbis-0.dll </li>
+					<li> C:\Windows\libvorbisfile-3.dll </li>
+				</ul>
+				<h3> Location of the Development Libraries </h3>
+				<ul>
+					<li> C:\SDL2 (SDL2) </li>
+					<li> C:\SDL2_Mixer (SDL2_mixer) </li>
+				</ul>
+				<h3> Setup Visual Studio </h3>
+				
+				<h4> Project Properties </h4>
+				<p>
+					<img src="" alt="project properties">
+				</p>
+				<h4> Platform Architecture </h4>
+				<ul>
+					<li> Platform: Active (x64) </li>
+				</ul>
+				<h4> Project Properties &#8594 Configuration Properties &#8594 VC++ Directories </h4>
+				<p><b> Include directories </b></p>
+				<p>
+					C:\SDL2\include <br>
+					C:\SDL2_Mixer\include <br>
+				</p>
+				<p><b> Libary Directories </b></p>
+				<p>
+					C:\SDL2\lib\x64 <br>
+					C:\SDL2_Mixer\lib\x64 <br>
+				</p>
+				<h4> Project Properties &#8594 Configuration Properties &#8594 Linker &#8594 General </h4>
+				<p><b> Additional Libary Directories </b></p>
+				<p>
+					C:\SDL2\lib\x64 <br>
+					C:\SDL2_Mixer\lib\x64 <br>
+				</p>
+				<h4> Project Properties &#8594 Configuration Properties &#8594 Linker &#8594 Input </h4>
+				<p><b> Additional Dependencies </b></p>
+				<p>
+					SDL2.lib <br>
+					SDL2main.lib <br>
+					SDL2_Mixer.lib <br>
+				</p>
+			</div>
+		</main>
+		<footer>
+			<!-- The link to my GitHub Account -->
+			<div id="links">
+				<a target="_blank" href="https://github.com/sagedemage">
+					<img class="icon-link" src="../icons/github.png" alt="my github page" width="30" height="30">
+				</a>
+			</div>
+			<!-- Copyright of my website -->
+			<p id="copyright"> &copy; 2021 Salmaan Saeed </p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Define character encoding to be UTF-8 -->
+		<meta charset="UTF-8">
+		<!-- Browser tab's title -->
+		<title>Salmaan's website</title>
+		<!-- Browser tab icon -->
+		<link rel="shortcut icon" href="icons/tech_electronics_icon.ico">
+		<!-- Define a description of the web page -->
+		<meta name="description" content="Salmaan's website">
+		<!-- Define keywords for search engines -->
+		<meta name="keywords" content="technology, hardware, software, hobbies, interests">
+		<!-- Make the web page responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Linking my stylesheet file to this html page -->
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- Bootstrap 4 -->
+		<!-- This is the compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Hosted jQuery library from Google -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- Slicknav javascript file -->
+		<script src="js/jquery.slicknav.min.js"></script>
+		<!-- Slicknav css file -->
+		<link rel="stylesheet" href="css/slicknav.css">
+	</head>
+	<body>
+		<!-- Slicknav Script -->
+		<script>
+		$(function(){
+			$('#nav_menu').slicknav({
+				prependTo: '#mobile_menu'
+			});
+		});
+		</script>
+		<!-- The Website Title -->
+		<header>
+			<h1> Ghost Game </h1>
+		</header>
+		<!-- Slicknav spawns here -->
+		<nav id ="mobile_menu"></nav>
+		<!-- Navigation Bar -->
+		<ul id="nav_menu">
+			<li><a class="active" href="index.html"> Home </a></li>
+			<li><a href="building_game/linux_build.html"> Building in Linux </a></li>
+			<li><a href="building_game/windows_build.html"> Building in Windows </a></li>
+		</ul>
+		<main>
+			<!-- Article Content -->
+			<div class="content">
+				<h2> About </h2>
+				<p> 
+				A simple game written in C++ using SDL2. It is supposed to be a 2D platformer. I am trying to make this game
+				portable to many operating systems (Windows, MacOS, Linux and etc..). I can only support this game for Windows
+				and Linux. This game is alpha software. There are many features missing for it to be a complete game.  
+				</p>
+				
+				<p>
+					<img src="" alt="ghost game">
+				</p>
+				
+				<h3> My Music </h3>
+				<p> 
+				I wrote the music for this game. Since it is an open source project. You can freely use, download, and modify music 
+				scores. I do not care if you use unmodified copies of my music. The only thing I want is to make sure you give credit
+				to the music I wrote.
+				</p>
+				
+				<h3> Controls </h3>
+				<ul>
+					<li> A -> move left </li>
+					<li> D -> move left </li>
+					<li> K -> jump </li>
+				</ul>
+				
+				<h3> Closing </h3>
+				<p>
+				I hope to do more than this. This is my first time programming with SDL2. I have used C++ before. I am determined
+				to get a fully functional game but it will take some time. 
+				</p>
+			</div>
+		</main>
+		<footer>
+			<!-- The link to my GitHub Account -->
+			<div id="links">
+				<a target="_blank" href="https://github.com/sagedemage">
+					<img class="icon-link" src="icons/github.png" alt="my github page" width="30" height="30">
+				</a>
+			</div>
+			<!-- Copyright of my website -->
+			<p id="copyright"> &copy; 2021 Salmaan Saeed </p>
+		</footer>
+	</body>
+</html>
