@@ -55,6 +55,7 @@
 				<h3> Software Requirements </h3>
 				<ul>
 					<li> Visual Studio </li>
+					<li> Clang/LLVM </li>
 					<li> SDL2 Runtime Binaries (64-bit Windows) </li>
 					<li> SDL2 Development Libraries (Visual C++ version) </li>
 					<li> SDL2_mixer Runtime Binaries (64 bit Windows) </li>
@@ -66,6 +67,7 @@
 					<li> <a href="https://www.libsdl.org/download-2.0.php"> SDL2 </a> </li>
 					<li> <a href="https://www.libsdl.org/projects/SDL_mixer/"> SDL2_mixer 2.0 </a> </li>
 					<li> <a href="https://visualstudio.microsoft.com/"> Visual Studio </a> </li>
+					<li> <a href="https://docs.microsoft.com/en-us/cpp/build/clang-support-msbuild?view=msvc-170"> Clang/LLVM support in Visual Studio projects </a> </li>
 				</ul>
 				
 				<h3> Location of the Runtime Binaries </h3>
@@ -91,6 +93,11 @@
 				<ul>
 					<li> Platform: Active (x64) </li>
 				</ul>
+				<h4> Project Properties &#8594 Configuration Properties &#8594 General </h4>
+				<p><b> Platform Toolset </b></p>
+				<p class="box">
+					LLVM (clang-cl)
+				</p>
 				<h4> Project Properties &#8594 Configuration Properties &#8594 VC++ Directories </h4>
 				<p><b> Include directories </b></p>
 				<p class="box">
