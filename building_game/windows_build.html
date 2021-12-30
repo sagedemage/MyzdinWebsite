@@ -58,8 +58,10 @@
 					<li> Clang/LLVM </li>
 					<li> SDL2 Runtime Binaries (64-bit Windows) </li>
 					<li> SDL2 Development Libraries (Visual C++ version) </li>
-					<li> SDL2_mixer Runtime Binaries (64 bit Windows) </li>
-					<li> SDL2_mixer Development Libraries (Visual C++ 64/32 bit) </li>
+					<li> SDL2_mixer Runtime Binaries (64-bit Windows) </li>
+					<li> SDL2_mixer Development Libraries (Visual C++ 64/32-bit) </li>
+					<li> SDL2_image Runtime Binaries (64-bit Windows)</li>
+					<li> SDL2_image Development Libraries (Visual C++ 32/64-bit) </li>
 				</ul>
 				
 				<h3> Websites of the software </h3>
@@ -71,18 +73,22 @@
 				</ul>
 				
 				<h3> Location of the Runtime Binaries </h3>
-				<ul>
-					<li> C:\Windows\SDL2.dll </li>
-					<li> C:\Windows\SDL2_mixer.dll </li>
-					<li> C:\Windows\libogg-0.dll </li>
-					<li> C:\Windows\libvorbis-0.dll </li>
-					<li> C:\Windows\libvorbisfile-3.dll </li>
-				</ul>
+				<p class="box-file-path">
+					C:\Windows\SDL2.dll <br>
+					C:\Windows\SDL2_mixer.dll <br>
+					C:\Windows\libogg-0.dll <br>
+					C:\Windows\libvorbis-0.dll <br>
+					C:\Windows\libvorbisfile-3.dll <br>
+					C:\Windows\SDL2_image.dll <br>
+					C:\Windows\libpng16-16.dll <br>
+					C:\Windows\zlib1.dll <br>
+				</p>
 				<h3> Location of the Development Libraries </h3>
-				<ul>
-					<li> C:\SDL2 (SDL2) </li>
-					<li> C:\SDL2_Mixer (SDL2_mixer) </li>
-				</ul>
+				<p class="box-file-path">
+					C:\SDL2 (SDL2) <br>
+					C:\SDL2_Mixer (SDL2_mixer) <br>
+					C:\SDL2_Image (SDL2_image)<br>
+				</p>
 				<h3> Setup Visual Studio </h3>
 				
 				<h4> Project Properties </h4>
@@ -91,37 +97,41 @@
 				</p>
 				<h4> Platform Architecture </h4>
 				<p><b>Platform: </b></p>
-				<p class="box">
+				<p class="box-option">
 					Active (x64)
 				</p>
 				<h4> Project Properties &#8594 Configuration Properties &#8594 General </h4>
 				<p><b> Platform Toolset </b></p>
-				<p class="box">
+				<p class="box-option">
 					LLVM (clang-cl)
 				</p>
 				<h4> Project Properties &#8594 Configuration Properties &#8594 VC++ Directories </h4>
 				<p><b> Include directories </b></p>
-				<p class="box">
+				<p class="box-option">
 					C:\SDL2\include <br>
 					C:\SDL2_Mixer\include <br>
+					C:\SDL2_Image\include <br>
 				</p>
 				<p><b> Library Directories </b></p>
-				<p class="box">
+				<p class="box-option">
 					C:\SDL2\lib\x64 <br>
 					C:\SDL2_Mixer\lib\x64 <br>
+					C:\SDL2_Image\lib\x64 <br>
 				</p>
 				<h4> Project Properties &#8594 Configuration Properties &#8594 Linker &#8594 General </h4>
 				<p><b> Additional Libary Directories </b></p>
-				<p class="box">
+				<p class="box-option">
 					C:\SDL2\lib\x64 <br>
 					C:\SDL2_Mixer\lib\x64 <br>
+					C:\SDL2_Image\lib\x64 <br>
 				</p>
 				<h4> Project Properties &#8594 Configuration Properties &#8594 Linker &#8594 Input </h4>
 				<p><b> Additional Dependencies </b></p>
-				<p class="box">
+				<p class="box-option">
 					SDL2.lib <br>
 					SDL2main.lib <br>
 					SDL2_Mixer.lib <br>
+					SDL2_Image.lib <br>
 				</p>
 				
 				<h3> GitHub Repository </h3>

@@ -137,9 +137,18 @@ h2, .header_line {
 	border-radius: 50%;
 }
 
-.box {
+.box-option {
 	background-color: #e2f3ff;
 	border-color: #6fc3ff; 
+	border-style: solid;
+	border-radius: 15px;
+	border-width: 2px;
+	padding: 10px;
+}
+
+.box-file-path {
+	background-color: #D5FFE7;
+	border-color: #41BB75; 
 	border-style: solid;
 	border-radius: 15px;
 	border-width: 2px;
