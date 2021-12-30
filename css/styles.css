@@ -96,20 +96,6 @@ h2, .header_line {
 	color: white;
 }
 
-#debian_logo {
-	display: block;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	float: left;
-	margin-right: auto;
-}
-
-#gnome_logo {
-	display: block;
-	float: left;
-}
 #copyright {
 	text-align: center;
 	clear: left;
