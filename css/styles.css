@@ -141,6 +141,15 @@ h2, .header_line {
 	padding: 10px;
 }
 
+.box-command {
+	background-color: #e6e6e6;
+	border-color: #a9a9a9;
+	border-style: solid;
+	border-radius: 15px;
+	border-width: 2px;
+	padding: 10px;
+}
+
 /* tablet portrait layout (768px to 959px) */
 @media only screen and (max-width: 959px) {
 	h1 {
