@@ -91,9 +91,9 @@
                     $ mkdir script-tidy <br>
                     $ cd script-tidy <br>
                     $ cmake ../ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON <br>
-                    $ clang-tidy -p ./ ../src/[cpp file path] -checks=* -header-filter=.* <br>
+                    $ clang-tidy -p ./ ../src/[cpp file path] -checks=*,-modernize*,-llvmlibc*,-llvm*,-hicpp* -header-filter=.* <br>
                     Example: <br>
-                    $ clang-tidy -p ./ ../src/main.cpp -checks=* -header-filter=.* <br>
+                    $ clang-tidy -p ./ ../src/main.cpp -checks=*,-modernize*,-llvmlibc*,-llvm*,-hicpp* -header-filter=.* <br>
                 </p>
 				
 				<h3> GitHub Repository </h3>
