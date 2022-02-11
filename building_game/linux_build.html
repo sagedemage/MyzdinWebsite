@@ -91,9 +91,10 @@
                     $ mkdir script-tidy <br>
                     $ cd script-tidy <br>
                     $ cmake ../ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON <br>
-                    $ clang-tidy -p ./ ../src/[cpp file path] -checks=*,-llvm*,-hicpp*,-modernize-use-trailing-return-type* -header-filter=.* <br>
+                    $ clang-tidy -p ./ ../src/[source file paths] -checks=*,-llvm*,-hicpp*,-modernize-use-trailing-return-type* -header-filter=.* <br>
                     Example: <br>
-                    $ clang-tidy -p ./ ../src/main.cpp -checks=*,-llvm*,-hicpp*,-modernize-use-trailing-return-type* -header-filter=.* <br>
+                    $ clang-tidy -p ./ ../src/main.cpp ../src/boundaries/boundaries.cpp ../src/game_play/game_play.cpp ../src/keybindings/keybindings.cpp ../src/player/player.cpp ../src/scene/scene.cpp -checks=*,-llvm*,-hicpp*,-modernize-use-trailing-return-type* -header-filter=.* <br>
+
                 </p>
 				
 				<h3> GitHub Repository </h3>
